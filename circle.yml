@@ -19,6 +19,6 @@ deployment:
       branch: master
       commands:
         # 生成した静的サイトをS3に同期
-        - aws s3 sync --exact-timestamps public/ s3://blog.nijohando.jp/ --delete
+        - aws s3 sync --exact-timestamps public/ s3://blog.ishiitaiga.jp/ --delete
         # CloudFrontのキャッシュをクリア
 #        - aws cloudfront create-invalidation --distribution-id <ディストリビューションID> --paths '/*'
